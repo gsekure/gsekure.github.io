@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="contact form example">
 		<!-- For IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- For Resposive Device -->
@@ -32,12 +34,7 @@
 	<body>
 		<div class="main-page-wrapper">
 
-			<!-- ===================================================
-				Loading Transition
-			==================================================== -->
-			<div id="loader-wrapper">
-				<div id="loader"></div>
-			</div>
+			
 
 			
 
@@ -61,9 +58,9 @@
 								<li class="address">
 									<i class="icon flaticon-multimedia"></i>
 									<h6>Mail us:</h6>
-									<p><a href="mailto: gsekureconsult@gmail.com" target="_blank">gsekureconsult@gmail.com</a></p>
+									<p><a href="contact.html" target="_blank">gsekureconsult@gmail.com</a></p>
 								</li>
-								<li class="quotes"><a href="+2348106133502">CONTACT US</a></li>
+								<li class="quotes"><a href="contact.html">CONTACT US</a></li>
 							</ul>
 						</div> <!-- /.address-wrapper -->
 					</div> <!-- /.container -->
@@ -276,7 +273,7 @@
 				<div class="opacity">
 					<div class="container">
 						<h2>We provide high quality security services &amp; innovative solutions for the realiable growth of your organization</h2>
-						<a href="https://www.gsekure-consult.business.site" class="theme-button-one">GET A QUOTE</a>
+						<a href="contact.html" class="theme-button-one">GET A QUOTE</a>
 					</div> <!-- /.container -->
 				</div> <!-- /.opacity -->
 			</div> <!-- /.feature-banner -->
@@ -291,7 +288,7 @@
 				<div class="container">
 					<div class="theme-title-one">
 						<h2>Our SERVICES</h2>
-						<p>We provide the following cyber security services</p>
+						<p>We provide the following IT/cyber security services</p>
 					</div> <!-- /.theme-title-one -->
 					<div class="wrapper">
 						<div class="row">
@@ -349,16 +346,16 @@
 								<div class="single-service">
 									<div class="img-box"><img src="images/home/me.jpg" alt=""></div>
 									<div class="text">
-										<h5><a href="service.html">Cybersecurity awareness training</a></h5>
+										<h5><a href="training.html">Cybersecurity awareness training</a></h5>
 										<p>Our Security Awareness Training programs on security best practices</p>
-										<a href="service.html" class="read-more">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+										<a href="training.html" class="read-more">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 									</div> <!-- /.text -->
 								</div> <!-- /.single-service -->
 							</div> <!-- /.col- -->
 						</div> <!-- /.row -->
 					</div> <!-- /.wrapper -->
 					<div class="contact-text">
-						<h4>You can send us an email at <a href="https://www.mail.google.com">gsekureconsult@gmail.com</a> and we’ll get in touch shortly, <br> or call  (+234) 810 613 3502</h4>
+						<h4>You can send us an email at <a href="contact.html">gsekureconsult@gmail.com</a> and we’ll get in touch shortly, <br> or call  (+234) 810 613 3502</h4>
 					</div>
 				</div> <!-- /.container -->
 			</div> <!-- /.service-style-one -->
@@ -570,44 +567,72 @@
 				<div class="container">
 					<div class="theme-title-one">
 						<h2>GET IN TOUCH</h2>
-						<p>Consultation is free please provide your information below</p>
+						<p>Consultation is free</p>
+
 					</div> <!-- /.theme-title-one -->
-					<div class="clearfix main-content no-gutters row">
-						<div class="col-lg-5 col-12"><div class="img-box"></div></div>
-						<div class="col-lg-7 col-12">
-							<div class="form-wrapper">
-								<form action="mailto: gsekureconsult@gmail.com" target="_blank" class="theme-form-one form-validation" autocomplete="off">
-									<div class="row">
-										<div class="col-sm-6 col-12"><input type="text" placeholder="Name *" name="name"></div>
-										<div class="col-sm-6 col-12"><input type="text" placeholder="Phone *" name="phone"></div>
-										<div class="col-sm-6 col-12"><input type="email" placeholder="Email *" name="email"></div>
-										<div class="col-sm-6 col-12"><input type="text" placeholder="Company *" name="company"></div>
-										<!--<div class="col-12"><textarea placeholder="Message" name="message"></textarea></div>-->
-									</div> <!-- /.row -->
-									<button class="theme-button-one">CONTACT US</button>
-								</form>
-							</div> <!-- /.form-wrapper -->
-						</div> <!-- /.col- -->
-					</div> <!-- /.main-content -->
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="gsekureconsult@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbwoSC2k0TaxLraW_Od_K2sY2UvBfJL4Wmq8dOA/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="Please enter your name" />
+      </fieldset>
+
+      
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="color">phone: </label>
+        <input id="phone" name="phone" placeholder="Phone number.." />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="color">Type: </label>
+        <input id="type" name="type" placeholder="Enquiry.." />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thank you</em> for contacting Gsekure!
+        We will get back to you soon!</h2>
+        <br>
+        
+    </div>
+
+  </form>
+  <br><br><br><br>
+  <hr>
+
 				</div> <!-- /.container -->
-				<!--Contact Form Validation Markup -->
-				<!-- Contact alert -->
-				<!--<div class="alert-wrapper" id="alert-success">
-					<div id="success">
-						<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
-						<div class="wrapper">
-			               	<p>Your message was sent successfully.</p>
-			             </div>
-			        </div>
-			    </div>--> <!-- End of .alert_wrapper -->
-			    <!--<div class="alert-wrapper" id="alert-error">
-			        <div id="error">
-			           	<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
-			           	<div class="wrapper">
-			               	<p>Sorry!Something Went Wrong.</p>
-			            </div>
-			        </div>
-			    </div>--> <!-- End of .alert_wrapper -->
+				
 			</div> <!-- /.contact-us-section -->
 
 
@@ -749,5 +774,10 @@
 		<!-- Theme js -->
 		<script src="js/theme.js"></script>
 		</div> <!-- /.main-page-wrapper -->
+
+		<!-- Submit the Form to Google Using "AJAX" -->
+  		<script data-cfasync="false" src="form-submission-handler.js"></script>
+
+		<!-- END -->
 	</body>
 </html>
