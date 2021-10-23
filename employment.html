@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -148,94 +153,71 @@
         </div> <!-- /.theme-menu-wrapper -->
       </header> <!-- /.header-one -->
 
-      
-      <!-- 
-      =============================================
-        Theme Inner Banner
-      ============================================== 
-      -->
-      <div class="theme-inner-banner section-spacing">
-        <div class="overlay">
-          <div class="container">
-            <h2>ENROLLMENT FORM</h2>
-          </div> <!-- /.container -->
-        </div> <!-- /.overlay -->
-      </div> <!-- /.theme-inner-banner -->
-      <hr>
-          
 
+	<br>
+	<br>
+	<br>
+	<center>
+		<h2>EMPLOYEE INFORMATION</h2>
 
+<form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.First_Name.value == "") { alert('First name is required.'); frm.First_Name.focus(); return false; }
+if (frm.Last_Name.value == "") { alert('Last name is required.'); frm.Last_Name.focus(); return false; }
+if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Email_Address.focus(); return false; }
+if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
+if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
+if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
+return true; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0">
+<tr> <td style="width: 50%">
+<label for="First_Name"><b>First name *</b></label><br />
+<input name="First_Name" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+</td> <td style="width: 50%">
+<label for="Last_Name"><b>Last name *</b></label><br />
+<input name="Last_Name" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Email_Address"><b>Email *</b></label><br />
+<input name="Email_Address" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Portfolio"><b>Portfolio website</b></label><br />
+<input name="Portfolio" type="text" maxlength="255" value="http://" style="width:100%;max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Position"><b>Position you are applying for *</b></label><br />
+<input name="Position" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+</td> </tr> <tr> <td>
+<label for="Salary"><b>Salary requirements</b></label><br /> <input name="Salary" type="text" maxlength="50" style="width:100%;max-width: 260px" /> </td> <td>
+<label for="StartDate"><b>When can you start?</b></label><br />
+<input name="StartDate" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+</td> </tr> <tr> <td>
+<label for="Phone"><b>Phone *</b></label><br />
+<input name="Phone" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+</td> <td>
+<label for="Fax"><b>Fax</b></label><br />
+<input name="Fax" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Relocate"><b>Are you willing to relocate?</b></label><br />
+<input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes      
+<input name="Relocate" type="radio" value="No" /> No      
+<input name="Relocate" type="radio" value="NotSure" /> Not sure
+</td> </tr> <tr> <td colspan="2">
+<label for="Organization"><b>Last company you worked for</b></label><br />
+<input name="Organization" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Reference"><b>Reference / Comments / Questions</b></label><br />
+<textarea name="Reference" rows="7" cols="40" style="width:100%;max-width: 535px"></textarea>
+</td> </tr> <tr> <td colspan="2" style="text-align: center;">
+<div style="float: right"> <a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+<script src="https://www.100forms.com/js/FORMKEY:4TL54KU4M3L2/SEND:timoudoh@gmail.com" type="text/javascript"></script>
+<input name="skip_submit" type="submit" value="Send Application" />
+</td> </tr>
+</table>
+</form>
 
-<!-- START HERE -->
-   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   <!-- Style The Contact Form How Ever You Prefer -->
-   <link rel="stylesheet" href="style.css">
+</center>
 
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="gsekureconsult@gmail.com"
-  action="https://script.google.com/macros/s/AKfycbwoSC2k0TaxLraW_Od_K2sY2UvBfJL4Wmq8dOA/exec">
-    <!-- change the form action to your script url -->
-
-    <div class="form-elements">
-      <fieldset class="pure-group">
-        <label for="name">Name: </label>
-        <input id="name" name="name" placeholder="Please enter your name" />
-      </fieldset>
-
-      
-      <fieldset class="pure-group">
-        <label for="email"><em>Your</em> Email Address:</label>
-        <input id="email" name="email" type="email" value=""
-        required placeholder="your.name@email.com"/>
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="color">phone: </label>
-        <input id="phone" name="phone" placeholder="please enter your phone number.." />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="course">Choose a Course: </label>
-        <select name="course" id="course">
-        <option value="Introduction to Cybersecurity">Introduction to Cybersecurity</option>
-        <option value="Cryptography and Encrption">Cryptography and Encrption</option>
-        <option value="Network security">Network Security</option>
-        <option value="Digital Forensics">Digital Forensics</option>
-        <option value=" system administration">System Administration</option>
-        <option value="Cloud Security">Cloud Security</option>
-        <option value="Risk Management">Risk Managemnent</option>
-        <option value="Penetration Testing">Penetration Testing</option>
-        <option value="Regulations and Privacy">Regulations and Privacy</option>
-        
-      </select>
-        
-      </fieldset>
-
-      
-
-      <fieldset class="pure-group honeypot-field">
-        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-        <input id="honeypot" type="text" name="honeypot" value="" />
-      </fieldset>
-
-      <button class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;Enroll</button>
-    </div>
-
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div class="thankyou_message" style="display:none;">
-      <h2><em>You have successfully enrolled in the course.</h2>
-        <br>
-      <a href="paymentplan.html"><button class="theme-button-one"><b><h3 style="color: white">Go to Course -></h3></b></button></a>
-    </div>
-
-  </form>
-  <br><br><br><br>
-  <hr>
-
-
-
-      
 
 
       <!--
