@@ -30,10 +30,15 @@ textarea {
   font-size: 125%;
 }
 button {
-  float: right;
+  float: left;
 }
 #name, #email {
   width: 50%;
+}
+
+#username, #password {
+  width: 20%;
+  float: center;
 }
 .honeypot-field {
   display: none;
